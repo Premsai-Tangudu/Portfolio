@@ -1,4 +1,5 @@
- .allbox{
+/* Base styles (Desktop) */
+.allbox{
     background-color: rgb(0, 0, 0);
     padding: 2%;
     padding-left: 3.5%;
@@ -6,115 +7,186 @@
     flex-direction: row;
     gap:5%;
 }
+
 .box1{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     background-color: rgb(219, 233, 73);
     height: 89vh;
     width: 20vw;
     border-radius:1.5vh;
+    padding: 2vh 1vh;
 }
+
 .myimage1{
-    margin-top: 18%;
+    margin-top: 3vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+
 .myimage{
     border-radius:2vh;
     width:10vw;
     height:20vh;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
 .name{
     display: flex;
     justify-content: center;
-    margin-top: 8%;
+    align-items: center;
+    margin-top: 3vh;
     font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
 }
+
 .skill{
-   margin-left: 13%;
-   display: flex;
+    margin-top: 2vh;
+    display: flex;
     justify-content: center;
+    align-items: center;
     background-color: rgb(0, 0, 0);
     width: 12vw;
     height:5vh;
-    border-radius: 1vh;  
+    margin-left: 2rem;
+    border-radius: 1vh;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
+
 .web{
     color: rgb(219, 233, 73);
     display: flex;
     justify-content: center;
-    font-size: 1rem;   
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
 }
+
 .hr{
     width:12vw;
-    margin-top: 8%;
-    border-color: rgb(0, 0, 0);
+    margin-top: 3vh;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 1px;
 }
+
 .contacts{
-    margin-top: 10%;
+    margin-top: 3vh;
     display:flex;
     flex-direction: column;
-    gap:2vh;
+    align-items: center;
+    gap:3vh;
+    width: 100%;
 }
 
 .logo{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1vh;
+    width: 100%;
+    padding: 0.5vh 1vh;
 }
+
 .links{
-    margin: 5%;
     color:black;
     font-weight: bold;
     text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
 }
+
+.links:hover {
+    color: #466cc4;
+}
+
 .logos{
-    border-radius:3.5vh;
+    border-radius:50%;
     width:3vw;
     height:6vh;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
 .socialmedial{
     display: flex;
     flex-direction: row;
-    gap:3vh;
-    margin: 15%;
+    gap:2vh;
+    margin-top: 2vh;
+    justify-content: center;
+    align-items: center;
 }
+
 .box2{
     display: flex;
     flex-direction: column;
     gap:4vh;
 }
+
 .box21{
     width:67vw;
     height:10vh;
     border-radius:1.5vh;
     background-color:rgb(219, 233, 73);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    padding: 1vh;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
 .navbar{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap:5%;   
+    align-items: center;
+    gap: 3vh;
+    flex-wrap: wrap;
 }
+
 .nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 0.8vh;
     background-color: black;
     color: rgb(219, 233, 73);
     width:10vw;
     height:6vh;
     border-radius: 1vh;
     font-weight: bold;
-   text-decoration: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
+
 .nav:hover{
     background-color: rgb(219, 233, 73);
     color:black;
     border:0.5vh solid black;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(219, 233, 73, 0.3);
 }
+
+.nav-icon {
+    font-size: 1.2em;
+    width: 1.5vh;
+    height: 1.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-text {
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
 .box22{
     width:67vw;
     height:75vh;
@@ -122,13 +194,16 @@
     background-color:rgb(219, 233, 73);
     overflow-y: auto;
 }
+
 .box22::-webkit-scrollbar {
     display: none; 
 }
+
 #about{
     height:70vh;
     padding-top:7px;
 }
+
 .about-image{
     padding-top: 3vh;
     float: right;
@@ -136,20 +211,26 @@
     height:40vh;
     width:40vh;
     border-radius:30px;
+    object-fit: cover;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
+
 .about-para{
     float: left;
     padding-left: 10vh;
+    padding-right: 2vh;
     font-weight: bold;
     font-size: 1.1rem;
-    line-height: 160%;
+    line-height: 180%;
     max-width: 55%;
-}
-.about-para span {
-    font-weight: bold;
-    color: #466cc4; /* You can change this to match your theme */
+    text-align: justify;
+    color: #000;
 }
 
+.about-para span {
+    font-weight: bold;
+    color: #466cc4;
+}
 
 .heading{
     display: flex;
@@ -162,16 +243,19 @@
     border-radius: 0vh 5vh 5vh 0vh;
     color:white;
 }
+
 #education{
     height: 80vh;
     padding-top: 1vh;
 }
+
 .education-item {
     padding-left: 20vh;
     display: flex;
     align-items: flex-start;
     margin-bottom: 4vh;
 }
+
 .edu-image {
     width: 8vw;
     height: 16vh;
@@ -180,23 +264,28 @@
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
 .edu-details h2 {
     font-size: 24px;
     margin: 0;
     color: #000000;
 }
+
 .edu-details p {
     margin: 5px 0;
     color: #000000;
     font-size: 16px;
 }
+
 .edu-details p:first-of-type {
     font-weight: bold;
 }
+
 #skills{
     padding-top: 1vh;
     height:80vh;
 }
+
 .skills-r {
     padding-top: 5vh;
     display: grid;
@@ -204,6 +293,7 @@
     gap:7vh;
     justify-content: center;
 }
+
 .skills-row {
     display: flex;
     align-items: center;
@@ -213,28 +303,33 @@
     background-color: rgb(0, 0, 0);
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    color: rgb(219, 233, 73);;
+    color: rgb(219, 233, 73);
     border-radius: 10px;
 }
+
 #certifications{
     padding-top: 1vh;
     height: 80vh;
 }
+
 #Certificates-row { 
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap:1vh;
     text-align: center;
 }
+
 .certificate-img {
     width: 170px;
     height: 110px;
 }
+
 .certificate-para {
     color: rgb(0, 0, 0);
     position: relative;
     font-weight: bold; 
 }
+
 .heading-cert{
     display: flex;
     justify-content: space-around;
@@ -246,10 +341,12 @@
     border-radius: 0vh 5vh 5vh 0vh;
     color:white;
 }
+
 #resume{
     padding-top: 1vh;
     padding-bottom: 45vh;
 }
+
 .resume {
     height:80vh;
     margin-top: 0vh;
@@ -257,6 +354,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .resume-button {
     display: flex;
     align-items: center;
@@ -280,7 +378,587 @@
     transform: scale(1.05);
 }
 
+/* ==================== TABLET STYLES (768px to 1024px) ==================== */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .allbox {
+        padding: 2%;
+        gap: 3%;
+        flex-direction: column;
+    }
+    
+    .box1 {
+        width: 100%;
+        height: 30vh;
+        flex-direction: row;
+        padding: 2vh;
+    }
+    
+    .myimage1 {
+        margin-top: 0;
+        flex: 1;
+    }
+    
+    .myimage {
+        width: 15vh;
+        height: 15vh;
+    }
+    
+    .name {
+        font-size: 1.8rem;
+        margin-top: 2vh;
+    }
+    
+    .skill {
+        margin-left: 0;
+        width: 20vh;
+        height: 4vh;
+    }
+    
+    .hr {
+        width: 20vh;
+        margin-top: 3vh;
+    }
+    
+    .contacts {
+        margin-top: 3vh;
+        gap: 1vh;
+    }
+    
+    .logos {
+        width: 5vh;
+        height: 5vh;
+    }
+    
+    .socialmedial {
+        gap: 2vh;
+        margin: 5%;
+    }
+    
+    .box21 {
+        width: 100%;
+        height: 8vh;
+    }
+    
+    .navbar {
+        gap: 3%;
+        flex-wrap: wrap;
+    }
+    
+    .nav {
+        width: 15vh;
+        height: 5vh;
+        font-size: 0.9rem;
+        gap: 0.5vh;
+    }
+    
+    .nav-icon {
+        font-size: 1em;
+        width: 1.2vh;
+        height: 1.2vh;
+    }
+    
+    .nav-text {
+        font-size: 0.8em;
+    }
+    
+    .box22 {
+        width: 100%;
+        height: 60vh;
+    }
+    
+    .about-image {
+        width: 25vh;
+        height: 25vh;
+        padding-right: 3vh;
+    }
+    
+    .about-para {
+        padding-left: 5vh;
+        font-size: 1rem;
+        max-width: 60%;
+    }
+    
+    .heading {
+        width: 20vh;
+        height: 7vh;
+        font-size: 3vh;
+    }
+    
+    .heading-cert {
+        width: 25vh;
+        height: 7vh;
+        font-size: 3vh;
+    }
+    
+    .education-item {
+        padding-left: 10vh;
+        margin-bottom: 3vh;
+    }
+    
+    .edu-image {
+        width: 15vh;
+        height: 12vh;
+    }
+    
+    .skills-r {
+        grid-template-columns: auto auto auto;
+        gap: 4vh;
+        padding-top: 3vh;
+    }
+    
+    .skills-row {
+        height: 6vh;
+        width: 18vh;
+    }
+    
+    #Certificates-row {
+        grid-template-columns: auto auto;
+        gap: 2vh;
+    }
+    
+    .certificate-img {
+        width: 140px;
+        height: 90px;
+    }
+}
 
- 
+/* ==================== MOBILE STYLES (up to 768px) ==================== */
+@media screen and (max-width: 768px) {
+    .allbox {
+        padding: 1%;
+        gap: 2vh;
+        flex-direction: column;
+    }
+    
+    .box1 {
+        width: 95%;
+        height: auto;
+        min-height: 40vh;
+        flex-direction: column;
+        padding: 3vh 2vh;
+    }
+    
+    .myimage1 {
+        margin-top: 0;
+    }
+    
+    .myimage {
+        width: 20vh;
+        height: 20vh;
+    }
+    
+    .name {
+        font-size: 1.6rem;
+        margin-top: 2vh;
+        text-align: center;
+    }
+    
+    .skill {
+        margin-left: 0;
+        width: 80%;
+        height: 5vh;
+        align-self: center;
+    }
+    
+    .web {
+        font-size: 1rem;
+    }
+    
+    .hr {
+        width: 80%;
+        margin-top: 2vh;
+        align-self: center;
+    }
+    
+    .contacts {
+        margin-top: 2vh;
+        gap: 1.5vh;
+        align-items: center;
+    }
+    
+    .logo {
+        align-items: center;
+    }
+    
+    .links {
+        margin: 2%;
+        font-size: 0.9rem;
+    }
+    
+    .logos {
+        width: 6vh;
+        height: 6vh;
+    }
+    
+    .socialmedial {
+        gap: 2vh;
+        margin: 5%;
+        justify-content: center;
+    }
+    
+    .box21 {
+        width:95%;
+        height: auto;
+        min-height: 12vh;
+        padding: 2vh 1vh;
+    }
+    
+    .navbar {
+        gap: 2vh;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav {
+        width: 20vh;
+        height: 6vh;
+        font-size: 0.9rem;
+        margin-bottom: 1vh;
+        gap: 1vh;
+    }
+    
+    .nav-icon {
+        font-size: 1.1em;
+        width: 1.8vh;
+        height: 1.8vh;
+    }
+    
+    .nav-text {
+        font-size: 0.85em;
+    }
+    
+    .box22 {
+        width: 100%;
+        height: 70vh;
+    }
+    
+    #about {
+        height: auto;
+        min-height: 60vh;
+        padding: 2vh;
+    }
+    
+    .about-image {
+        float: none;
+        display: block;
+        margin: 2vh auto;
+        padding: 0;
+        width: 30vh;
+        height: 30vh;
+    }
+    
+    .about-para {
+        float: none;
+        padding: 0 2vh;
+        font-size: 1rem;
+        max-width: 100%;
+        text-align: justify;
+        margin-top: 2vh;
+    }
+    
+    .heading {
+        width: 30vh;
+        height: 8vh;
+        font-size: 3.5vh;
+        border-radius: 0vh 3vh 3vh 0vh;
+    }
+    
+    .heading-cert {
+        width: 35vh;
+        height: 8vh;
+        font-size: 3.5vh;
+        border-radius: 0vh 3vh 3vh 0vh;
+    }
+    
+    #education {
+        height: auto;
+        min-height: 60vh;
+        padding: 2vh 1vh;
+    }
+    
+    .education-item {
+        padding-left: 2vh;
+        margin-bottom: 3vh;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .edu-image {
+        width: 25vh;
+        height: 15vh;
+        margin: 0 auto 2vh auto;
+    }
+    
+    .edu-details h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1vh;
+        text-align: center;
+    }
+    
+    .edu-details p {
+        font-size: 0.95rem;
+        margin: 3px 0;
+    }
+    
+    #skills {
+        height: auto;
+        min-height: 50vh;
+        padding: 2vh 1vh;
+    }
+    
+    .skills-r {
+        grid-template-columns: auto auto;
+        gap: 3vh;
+        padding-top: 3vh;
+    }
+    
+    .skills-row {
+        height: 7vh;
+        width: 25vh;
+        font-size: 0.9rem;
+    }
+    
+    #certifications {
+        height: auto;
+        min-height: 60vh;
+        padding: 2vh 1vh;
+    }
+    
+    #Certificates-row {
+        grid-template-columns: auto;
+        gap: 3vh;
+        padding: 0 2vh;
+    }
+    
+    .certificate-img {
+        width: 80%;
+        max-width: 200px;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .certificate-para {
+        font-size: 0.9rem;
+        margin-top: 1vh;
+    }
+    
+    #resume {
+        padding: 2vh 1vh 10vh 1vh;
+        height: auto;
+        min-height: 30vh;
+    }
+    
+    .resume {
+        height: auto;
+        margin-top: 2vh;
+    }
+    
+    .resume-button {
+        padding: 2vh 6vh;
+        font-size: 2vh;
+        width: 80%;
+        max-width: 300px;
+    }
+}
 
+/* ==================== SMALL MOBILE STYLES (up to 480px) ==================== */
+@media screen and (max-width: 480px) {
+    .allbox {
+        padding: 0.5%;
+    }
+    
+    .box1 {
+        padding: 2vh 1vh;
+    }
+    
+    .myimage {
+        width: 18vh;
+        height: 18vh;
+    }
+    
+    .name {
+        font-size: 1.4rem;
+    }
+    
+    .skill {
+        width: 90%;
+        height: 4.5vh;
+    }
+    
+    .web {
+        font-size: 0.9rem;
+    }
+    
+    .links {
+        font-size: 0.85rem;
+    }
+    
+    .logos {
+        width: 5vh;
+        height: 5vh;
+    }
+    
+    .nav {
+        width: 18vh;
+        height: 5.5vh;
+        font-size: 0.8rem;
+        gap: 0.8vh;
+    }
+    
+    .nav-icon {
+        font-size: 1em;
+        width: 1.5vh;
+        height: 1.5vh;
+    }
+    
+    .nav-text {
+        font-size: 0.75em;
+    }
+    
+    .about-image {
+        width: 25vh;
+        height: 25vh;
+    }
+    
+    .about-para {
+        font-size: 0.9rem;
+        padding: 0 1vh;
+    }
+    
+    .heading {
+        width: 25vh;
+        height: 7vh;
+        font-size: 3vh;
+    }
+    
+    .heading-cert {
+        width: 30vh;
+        height: 7vh;
+        font-size: 3vh;
+    }
+    
+    .edu-image {
+        width: 20vh;
+        height: 12vh;
+    }
+    
+    .edu-details h2 {
+        font-size: 1.1rem;
+    }
+    
+    .edu-details p {
+        font-size: 0.85rem;
+    }
+    
+    .skills-r {
+        grid-template-columns: auto;
+        gap: 2vh;
+    }
+    
+    .skills-row {
+        height: 6vh;
+        width: 30vh;
+        font-size: 0.8rem;
+    }
+    
+    .certificate-img {
+        width: 90%;
+    }
+    
+    .certificate-para {
+        font-size: 0.8rem;
+    }
+    
+    .resume-button {
+        padding: 1.5vh 4vh;
+        font-size: 1.8vh;
+        width: 90%;
+    }
+}
 
+/* ==================== LANDSCAPE MOBILE STYLES ==================== */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .allbox {
+        flex-direction: row;
+        gap: 2%;
+    }
+    
+    .box1 {
+        width: 25%;
+        height: 90vh;
+        flex-direction: column;
+    }
+    
+    .myimage {
+        width: 8vh;
+        height: 8vh;
+    }
+    
+    .name {
+        font-size: 1rem;
+        margin-top: 1vh;
+    }
+    
+    .skill {
+        width: 90%;
+        height: 3vh;
+    }
+    
+    .web {
+        font-size: 0.7rem;
+    }
+    
+    .contacts {
+        margin-top: 1vh;
+        gap: 0.5vh;
+    }
+    
+    .logos {
+        width: 3vh;
+        height: 3vh;
+    }
+    
+    .socialmedial {
+        gap: 1vh;
+        margin: 2%;
+    }
+    
+    .box2 {
+        width: 73%;
+        gap: 1vh;
+    }
+    
+    .box21 {
+        height: 6vh;
+    }
+    
+    .nav {
+        width: 12vh;
+        height: 4vh;
+        font-size: 0.7rem;
+        gap: 0.3vh;
+    }
+    
+    .nav-icon {
+        font-size: 0.8em;
+        width: 1vh;
+        height: 1vh;
+    }
+    
+    .nav-text {
+        font-size: 0.65em;
+    }
+    
+    .box22 {
+        height: 82vh;
+    }
+    
+    .about-image {
+        width: 15vh;
+        height: 15vh;
+    }
+    
+    .about-para {
+        font-size: 0.8rem;
+    }
+}
